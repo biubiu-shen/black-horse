@@ -43,7 +43,7 @@ export default {
 
 <style scoped lang="less">
 .toutiao{
-  // font-size: 40px;
+  font-size: 40px;
   /deep/ .van-tabbar-item__text{
     font-size: 20px;
   }
