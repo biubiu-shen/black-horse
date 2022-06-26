@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <router-view></router-view>
-  </div>
+  <div>deng</div>
 </template>
 
 <script>
@@ -18,5 +16,5 @@ export default {
 }
 </script>
 
-<style scoped lang="less">
+<style scoped>
 </style>
