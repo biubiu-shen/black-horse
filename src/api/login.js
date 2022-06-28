@@ -1,4 +1,5 @@
 import request from '@/utils/request'
+import store from '@/store'
 /**
  *
  * @param {mobile,code} param0
@@ -23,5 +24,14 @@ export const SendCode = (mobile) => {
   return request({
     method: 'get',
     url: `/sms/codes/${mobile}`
+  })
+}
+
+export const getUserInfo = () => {
+  return request({
+    url: 'user',
+    headers: {
+      Authorization: 'Bearer ' + store.state.user.token
+    }
   })
 }

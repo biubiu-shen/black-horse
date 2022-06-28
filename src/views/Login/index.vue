@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-nav-bar title="登录">
+    <van-nav-bar title="登录" @click-left="$router.back()">
       <template #left>
         <van-icon name="cross" />
       </template>
@@ -83,6 +83,7 @@ export default {
         // 将身份标识交给vuex存储，其他组件也可以使用这个身份标识
         this.$store.commit('getUserToken', res.data.data)
         this.$toast.success('登录成功')
+        this.$router.push({ name: 'my' })
       } catch (err) {
         this.$toast.fail('登录失败')
         // console.log(err)
