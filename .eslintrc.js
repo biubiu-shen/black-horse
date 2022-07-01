@@ -15,5 +15,6 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     /** 关闭双驼峰命名 */
     'vue/multi-word-component-names': 'off'
+
   }
 }
