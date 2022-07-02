@@ -11,13 +11,6 @@
         finished-text="没有更多了"
         @load="onLoad"
       >
-        <!-- <van-cell
-          v-for="(item, index) in artList"
-          :key="index"
-          :title="item.title"
-          value="内容"
-          label="描述信息"
-        /> -->
         <Art v-for="(item, index) in artList" :key="index" :article="item"></Art>
       </van-list>
     </van-pull-refresh>
