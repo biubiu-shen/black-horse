@@ -38,6 +38,12 @@ const routes = [
   {
     path: '/login',
     component: () => import('@/views/Login')
+  },
+  {
+    path: '/article/:article_id',
+    name: 'article',
+    component: () => import('@/views/Article'),
+    props: true// params相关的路由加上这个可以 让路由和组件解耦
   }
 
 ]
