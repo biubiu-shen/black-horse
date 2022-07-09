@@ -6,7 +6,7 @@
           <img :src="list.photo" alt="" />
           <p>{{list.name}}</p>
         </div>
-        <button>编辑资料</button>
+        <button @click="$router.push('/userinfo')">编辑资料</button>
       </div>
       <ul class="list">
         <li>

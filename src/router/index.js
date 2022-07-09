@@ -44,6 +44,9 @@ const routes = [
     name: 'article',
     component: () => import('@/views/Article'),
     props: true// params相关的路由加上这个可以 让路由和组件解耦
+  }, {
+    path: '/userinfo',
+    component: () => import('@/views/User/index.vue')
   }
 
 ]
